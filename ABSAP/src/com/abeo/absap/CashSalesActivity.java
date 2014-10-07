@@ -23,6 +23,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class CashSalesActivity extends Activity {
+	
 	private TextView mCode;
 	private TextView mName;
 	private TextView mAddress;
