@@ -355,25 +355,28 @@ public class HomeFragment extends Fragment {
 				markerOptions1.position(new LatLng(10.7891304, 106.700646));
 				markerOptions1.title("မေဧကရီ");
 				markerOptions1.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
-				
 				markerOptions2.position(new LatLng(10.7822061, 106.6965691));
 				markerOptions2.title("ဆန်းသစ်လွင်");
 				markerOptions2.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE));
 				
 				markerOptions3.position(new LatLng(10.788539, 106.703569));
 				markerOptions3.title("ိုးစံ");
-				markerOptions3.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA));
+				//markerOptions3.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA));
 				
 				markerOptions4.position(new LatLng(10.787864, 106.695061));
 				markerOptions4.title("လင်း");
-				markerOptions4.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
+				//markerOptions4.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW));
 				//markerOptions4.icon(BitmapDescriptorFactory
 					//	.fromResource(R.drawable.dd_start));
-				map.addMarker(markerOptions1);
-				map.addMarker(markerOptions2);
-				map.addMarker(markerOptions3);
-				map.addMarker(markerOptions4);
-				// map.addPolyline(lineOptions);
+				Marker m1 =  map.addMarker(markerOptions1);
+				Marker m2 = map.addMarker(markerOptions2);
+				Marker m3 = map.addMarker(markerOptions3);
+				Marker m4 = map.addMarker(markerOptions4);
+				m1.showInfoWindow();
+				//m2.showInfoWindow();
+				//m3.showInfoWindow();
+				//m4.showInfoWindow();
+				map.addPolyline(lineOptions);
 			} catch (Exception ex) {
 				Toast.makeText(getActivity(), ex.getMessage(),
 						Toast.LENGTH_SHORT).show();
