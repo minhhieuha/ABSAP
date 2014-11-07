@@ -52,9 +52,7 @@ public class TodayVisitAdapter extends ArrayAdapter<TodayVisit> {
 			holder.address = (TextView) row.findViewById(R.id.textViewVisitAddress);
 			holder.status = (TextView) row.findViewById(R.id.textViewVisitStatus);
 			
-			Typeface tf = Typeface.createFromAsset(mContext.getAssets(),"fonts/myanmar3.ttf");
-			holder.name.setTypeface(tf);
-			holder.address.setTypeface(tf);
+			
 
 			row.setTag(holder);
 		} else {
@@ -76,7 +74,9 @@ public class TodayVisitAdapter extends ArrayAdapter<TodayVisit> {
 		{
 			holder.status.setBackgroundColor(Color.BLUE);
 		}
-
+		Typeface tf = Typeface.createFromAsset(mContext.getAssets(),"fonts/myanmar3.ttf");
+		holder.name.setTypeface(tf);
+		holder.address.setTypeface(tf);
 		return row;
 
 	}

@@ -1,6 +1,7 @@
 package com.abeo.absap;
 
 import java.io.Serializable;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +14,7 @@ import android.app.PendingIntent;
 import android.app.TaskStackBuilder;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Parcelable;
@@ -39,7 +41,7 @@ public class TodayVisitFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-
+		         
 		View rootView = inflater.inflate(R.layout.fragment_today_visit,
 				container, false);
 		mLayoutLoading = (LinearLayout) rootView
@@ -149,12 +151,15 @@ public class TodayVisitFragment extends Fragment {
 		protected Boolean doInBackground(String... params) {
 			try {
 				Thread.sleep(1000);
+				mDataList.add(new TodayVisit("1", "C00102635",
+						"​အမှတ် (၁၀၀) ၊ ငုဝါလမ်း ၊ ဌာနရပ်ကွက်",
+						"အမှတ် (၁၀၀) ၊ ငုဝါလမ်း ၊ ဌာနရပ်ကွက်", "C"));
 				mDataList
 						.add(new TodayVisit(
 								"1",
 								"C00102635",
-								"​မေဧကရီ",
-								"အမှတ်(အက်စ်-၂)၊အခန်း(၀၀၁)၊မင်းရဲကျော်စွာဗီလာ၊တာမွေလေးရပ်ကွက်",
+								"​အမှတ်(၇၉)၊ဆင်မင်းလမ်း၊ဆင်မင်းရပ်ကွက်",
+								"အမှတ် - ၅၉ ၊ မာလာမြိုင်(၂)လမ်းထိပ် ၊ (၁၆)ရပ်ကွက် ၊ လှိုင်",
 								"C"));
 				mDataList
 						.add(new TodayVisit(
