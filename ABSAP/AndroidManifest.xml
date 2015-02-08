@@ -29,7 +29,7 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyBlZaq4NcNTUnqpOhtyBVE4i9C0q9Z-VXg" />
+            android:value="AIzaSyAYF7AdXzKZ4LFd6Zjz-jKQvo8ccwu3I24" />
 
         <activity
             android:name=".LoginActivity"
@@ -181,7 +181,6 @@
                 <data android:mimeType="application/sdp" />
             </intent-filter>
             <intent-filter>
- !-- HTTP live support -->;
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />

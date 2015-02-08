@@ -172,7 +172,7 @@ public class StockCountActivity extends Activity   {
 		listDataChild = new HashMap<String, List<MasterItem>>();
 
 		// Adding child data
-		listDataHeader.add("Pahatama Product");
+		listDataHeader.add("ABC Product");
 		listDataHeader.add("Competitor Product");
 
 		// Adding child data

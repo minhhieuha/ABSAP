@@ -74,7 +74,7 @@ public class TodayVisitAdapter extends ArrayAdapter<TodayVisit> {
 		{
 			holder.status.setBackgroundColor(Color.BLUE);
 		}
-		Typeface tf = Typeface.createFromAsset(mContext.getAssets(),"fonts/myanmar3.ttf");
+		Typeface tf = Typeface.createFromAsset(mContext.getAssets(),"fonts/mm3.ttf");
 		holder.name.setTypeface(tf);
 		holder.address.setTypeface(tf);
 		return row;
